@@ -11,7 +11,7 @@ export default definePage({
     title: `Medicare GLP-1 Bridge 2026: ${$en(BR.copay)} Wegovy, Zepbound, Foundayo`,
     description: `Medicare GLP-1 Bridge: ${$en(BR.copay)} a month for Wegovy, Zepbound KwikPen and Foundayo from July 2026 to December 2027, who qualifies, the BMI rules and the savings.`,
     h1: 'The Medicare GLP-1 Bridge: $50 a month for weight-loss GLP-1s',
-    intro: (h) => `Since July 1, 2026, people with Medicare Part D can get Wegovy, Zepbound KwikPen or Foundayo for weight management at ${h.usd(BR.copay)} a month, until December 31, 2027.`,
+    intro: (h) => `Since July 1, 2026, the Medicare GLP-1 Bridge lets people with Part D get Wegovy, Zepbound KwikPen or Foundayo for weight management at ${h.usd(BR.copay)} a month, until December 31, 2027.`,
     resume: (h) => `The Medicare GLP-1 Bridge is a short-term demonstration run by CMS, not a Part D benefit. From July 1, 2026 to December 31, 2027 it gives Medicare Part D enrollees access to three weight-management drugs, Wegovy in every form, Zepbound in the KwikPen only and Foundayo, for a flat copay of ${h.usd(BR.copay)} a month. To qualify, you must be enrolled in a standalone drug plan or a Medicare Advantage plan with drug coverage, be prescribed the drug to reduce and maintain body weight, and have had, when you started a GLP-1, a body-mass index of at least ${BR.bmi.alone}, or ${BR.bmi.withHfpefHtnCkd} with heart failure with preserved ejection fraction, uncontrolled hypertension or kidney disease stage 3a or worse, or ${BR.bmi.withPrediabetesMiStrokePad} with prediabetes, a past heart attack or stroke, or peripheral artery disease. People whose GLP-1 is covered by Part D for diabetes, sleep apnea or MASH are excluded. The ${h.usd(BR.copay)} does not count toward the ${h.usd(PD(2026).oopCap)} Part D cap and Extra Help does not reduce it.`,
     body: (h) => `
 <h2>Why a bridge, and to what</h2>
@@ -21,7 +21,7 @@ export default definePage({
 <h2>Which threshold applies to you</h2>
 <p>The criteria apply at the time you started GLP-1 therapy, which may be before you joined Medicare or before July 2026. CMS gives the example of someone who started at a BMI of 37 and weighs in at 34 today: the prescriber attests the starting value. The tool below computes a BMI from height and weight and shows which threshold the listed diagnoses set. It is arithmetic, not an eligibility decision: your prescriber attests under penalty of perjury, and CMS can check the attestation against Medicare data.</p>
 ${h.mini('bridgeBmi')}
-<h2>How to get it</h2>
+<h2>How to get the Medicare GLP-1 Bridge</h2>
 <ol>
 <li><strong>Your prescriber sends a prior authorization</strong> to the Bridge’s central processor, by fax or electronic portal. CMS says decisions come within 72 hours and are mailed to you.</li>
 <li><strong>The pharmacy fills the prescription</strong> and bills the Bridge, not your plan. You pay ${h.usd(BR.copay)}.</li>
@@ -42,7 +42,7 @@ ${h.mini('bridgeBmi')}
     title: `Medicare GLP-1 Bridge 2026: Wegovy y Zepbound a ${$es(BR.copay)} al mes`,
     description: `Medicare GLP-1 Bridge: ${$es(BR.copay)} al mes por Wegovy, Zepbound KwikPen y Foundayo de julio de 2026 a diciembre de 2027, requisitos, criterios de IMC y ahorro.`,
     h1: 'El Medicare GLP-1 Bridge: 50 dólares al mes por los GLP-1 para bajar de peso',
-    intro: (h) => `Desde el 1 de julio de 2026, las personas con la Parte D de Medicare pueden recibir Wegovy, Zepbound KwikPen o Foundayo para controlar el peso por ${h.usd(BR.copay)} al mes, hasta el 31 de diciembre de 2027.`,
+    intro: (h) => `Desde el 1 de julio de 2026, el Medicare GLP-1 Bridge permite a las personas con la Parte D recibir Wegovy, Zepbound KwikPen o Foundayo para controlar el peso por ${h.usd(BR.copay)} al mes, hasta el 31 de diciembre de 2027.`,
     resume: (h) => `El Medicare GLP-1 Bridge es una demostración temporal de CMS, no un beneficio de la Parte D. Del 1 de julio de 2026 al 31 de diciembre de 2027 da acceso a las personas inscritas en la Parte D a tres medicamentos para controlar el peso, Wegovy en todas sus formas, Zepbound solo en KwikPen y Foundayo, por un copago fijo de ${h.usd(BR.copay)} al mes. Para calificar hay que estar en un plan de medicamentos independiente o en un plan Medicare Advantage con cobertura de medicamentos, tener la receta para reducir y mantener el peso y haber tenido, al empezar un GLP-1, un índice de masa corporal de al menos ${BR.bmi.alone}, o de ${BR.bmi.withHfpefHtnCkd} con insuficiencia cardíaca con fracción de eyección preservada, hipertensión no controlada o enfermedad renal en etapa 3a o peor, o de ${BR.bmi.withPrediabetesMiStrokePad} con prediabetes, un infarto o ictus previo o enfermedad arterial periférica. Quedan fuera las personas cuyo GLP-1 cubre la Parte D por diabetes, apnea del sueño o MASH. Los ${h.usd(BR.copay)} no cuentan para el tope de ${h.usd(PD(2026).oopCap)} de la Parte D y la Ayuda Adicional no los reduce.`,
     body: (h) => `
 <h2>Por qué un puente, y hacia qué</h2>
@@ -52,7 +52,7 @@ ${h.mini('bridgeBmi')}
 <h2>Qué umbral le corresponde</h2>
 <p>Los criterios se aplican al momento en que empezó el tratamiento con GLP-1, que puede ser anterior a su inscripción en Medicare o a julio de 2026. CMS da el ejemplo de una persona que empezó con un IMC de 37 y hoy tiene 34: el médico certifica el valor inicial. La herramienta calcula un IMC a partir de la estatura y el peso y muestra el umbral que fijan los diagnósticos de la lista. Es aritmética, no una decisión: su médico lo certifica bajo pena de perjurio y CMS puede contrastarlo con los datos de Medicare.</p>
 ${h.mini('bridgeBmi')}
-<h2>Cómo obtenerlo</h2>
+<h2>Cómo obtener el Medicare GLP-1 Bridge</h2>
 <ol>
 <li><strong>Su médico envía una autorización previa</strong> al procesador central del Bridge, por fax o por portal electrónico. CMS indica que la decisión llega en 72 horas y se le envía por correo.</li>
 <li><strong>La farmacia surte la receta</strong> y factura al Bridge, no a su plan. Usted paga ${h.usd(BR.copay)}.</li>

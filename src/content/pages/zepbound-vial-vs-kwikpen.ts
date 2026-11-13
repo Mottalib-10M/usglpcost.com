@@ -18,7 +18,7 @@ export default definePage({
     body: (h) => `
 <h2>All three forms at every dose</h2>
 ${h.table(['Dose', 'Vial, self-pay', 'KwikPen, self-pay', 'Vial list price', 'KwikPen list price', 'Single-dose pen, pharmacy cost'], S.map((s) => [`${s} mg`, h.usd(cash('zepbound', `vial-${s}`)), h.usd(cash('zepbound', `kwikpen-${s}`)), h.usd(list('zepbound', `vial-${s}`)), h.usd(list('zepbound', `kwikpen-${s}`)), h.usd(nadac('zepbound', `pen-${s}`))]), 'One month: four vials, one KwikPen (28 days, four doses) or four single-dose pens.', ['l', 'r', 'r', 'r', 'r', 'r'])}
-<h2>Practical differences that cost money</h2>
+<h2>Practical differences between the vial and the KwikPen that cost money</h2>
 <p>Vials need a syringe and needle for every injection, and the KwikPen needs pen needles; Lilly’s KwikPen terms state that pen needles are a separate purchase, and CMS confirms the Bridge does not cover them. A month of KwikPen therefore costs its price plus four needles. A KwikPen month is defined as 28 days, which matters for the 45-day refill condition at 7.5 mg and above. The single-dose pen needs nothing else, which is part of why insurers that cover Zepbound usually cover that form.</p>
 <h2>Why the list prices differ</h2>
 <p>TrumpRx shows the vial at ${h.usd(list('zepbound', 'vial-5'))} whatever the dose, and the KwikPen at ${h.usd(list('zepbound', 'kwikpen-5'))} up to 7.5 mg and ${h.usd(list('zepbound', 'kwikpen-10'))} above. Lilly does not publish its reasons. For a cash buyer on LillyDirect the list price is irrelevant; it matters when an insurer’s coinsurance is computed on it, or for a pharmacy cash claim outside the program.</p>

@@ -24,7 +24,7 @@ ${h.table(['Product and dose', 'Refill within 45 days', 'Refill after 45 days', 
 <p>Lilly presents the condition as part of a program for people who stay on treatment; it does not publish other reasons, and we do not speculate. What matters for budgeting is that the lower price is conditional, and that the calculator lets you switch it off to see the regular price.</p>
 <h2>What the rule does not touch</h2>
 <p>Insurance claims and the Medicare GLP-1 Bridge are not affected: the Bridge copay is ${h.usd(h.M.P.bridge.copay)} for the Zepbound KwikPen and Foundayo whatever the timing. Novo Nordisk’s self-pay prices for Wegovy and Ozempic carry no refill-timing condition.</p>
-<h2>Planning refills around the window</h2>
+<h2>Planning Zepbound refills around the 45-day window</h2>
 <p>The safest pattern is to order each refill a week before the current supply runs out, which keeps every interval near 28 days and far from 45. Home delivery takes several days, so ordering on the last injection day already eats into the margin. Travel abroad, a hospital stay or a supply shortage are the usual causes of a late refill; when a pause is planned, it is worth asking LillyDirect in advance how the restart will be priced, since the first fill at a dose gets the program price.</p>
 <p>Prescription renewals matter too. A prescription that expires, or that needs a new dose written after a visit, can delay a refill beyond 45 days without any change in your treatment. Booking the follow-up visit before the last refill on a prescription avoids that.</p>
 <h2>Comparing with insurance</h2>
