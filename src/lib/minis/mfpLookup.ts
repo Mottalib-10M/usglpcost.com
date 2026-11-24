@@ -1,4 +1,4 @@
-/** Prix négociés Medicare : prix pour 30 jours en 2026 et 2027, part annuelle Partie D à ce prix. */
+/** Prix négociés Medicare : prix pour 30 jours en 2026, 2027 et 2028, part annuelle Partie D à ce prix (2027). */
 import { T, usd } from './_kit';
 import { DATA, partDYear } from '../engine/index';
 import type { MiniSpec } from '../mini-types';
@@ -10,11 +10,11 @@ export default (l: 'en' | 'es'): MiniSpec => ({
   inputs: [{ id: 'd', label: T(l, 'Drug', 'Medicamento'), def: Math.max(0, DRUGS.findIndex(([k]) => k.startsWith('OZEMPIC'))), options: DRUGS.map(([k], i) => ({ value: String(i), label: nice(k) })) }],
   run: (v) => {
     const [, x] = DRUGS[v.d] ?? DRUGS[0];
-    const p26 = x.prices['2026']; const p27 = x.prices['2027'];
+    const p26 = x.prices['2026']; const p27 = x.prices['2027']; const p28 = x.prices['2028'];
     const share = p27 ? partDYear(12 * p27, 2027).oop : null;
     return {
-      head: [T(l, '2027 price for 30 days', 'Precio 2027 por 30 días'), p27 ? usd(p27, l, p27 % 1 ? 2 : 0) : T(l, 'Not yet published', 'Aún no publicado')],
-      rows: [[T(l, '2026 price for 30 days', 'Precio 2026 por 30 días'), p26 ? usd(p26, l, p26 % 1 ? 2 : 0) : T(l, 'not selected for 2026', 'no seleccionado para 2026')], [T(l, 'Your 2027 Part D share at this price', 'Su parte de la Parte D 2027 a este precio'), share === null ? '–' : usd(share, l)], [T(l, 'Selected for', 'Seleccionado para'), x.ipay]],
+      head: [T(l, '2027 price for 30 days', 'Precio 2027 por 30 días'), p27 ? usd(p27, l, p27 % 1 ? 2 : 0) : p28 ? T(l, 'None: the price starts in 2028', 'Ninguno: el precio empieza en 2028') : T(l, 'Not yet published', 'Aún no publicado')],
+      rows: [[T(l, '2026 price for 30 days', 'Precio 2026 por 30 días'), p26 ? usd(p26, l, p26 % 1 ? 2 : 0) : T(l, 'not selected for 2026', 'no seleccionado para 2026')], [T(l, '2028 price for 30 days', 'Precio 2028 por 30 días'), p28 ? usd(p28, l, p28 % 1 ? 2 : 0) : T(l, 'none listed', 'sin precio en el archivo')], [T(l, 'Your 2027 Part D share at this price', 'Su parte de la Parte D 2027 a este precio'), share === null ? '–' : usd(share, l)], [T(l, 'Selected for', 'Seleccionado para'), x.ipay]],
       note: T(l, 'CMS file of negotiated (maximum fair) prices; standard Part D benefit. Estimate only.', 'Archivo de CMS de precios negociados; beneficio estándar de la Parte D. Estimación indicativa.'),
     };
   },

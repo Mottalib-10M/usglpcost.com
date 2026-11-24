@@ -147,6 +147,13 @@
         "es": "CMS, medicamentos seleccionados y precios negociados de Medicare"
       }
     },
+    "cmsFactSheet2028": {
+      "url": "https://www.cms.gov/files/document/fact-sheet-negotiated-prices-ipay-2028.pdf",
+      "label": {
+        "en": "CMS, fact sheet: negotiated prices for 2028 (November 2026)",
+        "es": "CMS, hoja informativa: precios negociados para 2028 (noviembre de 2026)"
+      }
+    },
     "cmsFactSheet2027": {
       "url": "https://www.cms.gov/files/document/fact-sheet-negotiated-prices-ipay-2027.pdf",
       "label": {

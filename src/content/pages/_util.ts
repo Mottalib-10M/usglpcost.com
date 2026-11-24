@@ -14,6 +14,9 @@ export const intro = (id: M.ProductId, d: string) => M.cashPrice(prod(id), dz(id
 export const list = (id: M.ProductId, d: string) => M.listPrice(dz(id, d)) ?? NaN;
 export const nadac = (id: M.ProductId, d: string) => M.nadacMonth(dz(id, d))?.monthly ?? NaN;
 export const mfp = (id: M.ProductId, y: M.Year) => M.mfp(prod(id), y) ?? NaN;
+/** Prix négocié 2028 (fichier CMS du 23/11/2026) par clé du fichier CMS : hors du type Year du moteur, limité à 2026-2027. */
+export const mfp2028 = (key: string) => M.DATA.mfp.drugs[key]?.prices['2028'] ?? NaN;
+export const mfpKeyYear = (key: string, y: '2026' | '2027' | '2028') => M.DATA.mfp.drugs[key]?.prices[y] ?? NaN;
 export const partD = (id: M.ProductId, d: string, y: M.Year) => { const b = M.partDBasis(prod(id), dz(id, d), y); return b ? M.partDYear(12 * b.monthly, y).oop : NaN; };
 export const capMonth = (id: M.ProductId, d: string, y: M.Year) => { const b = M.partDBasis(prod(id), dz(id, d), y); return b ? M.partDCapMonth(b.monthly, y) : null; };
 export const PD = (y: M.Year) => M.P.partD[String(y) as '2026' | '2027'];

@@ -1231,17 +1231,18 @@
  "nadacAsOf": "2026-10-28",
  "nadacSource": "https://data.medicaid.gov/dataset/fbb83258-11c7-47f5-8b18-5f8e79f7e704",
  "mfp": {
-  "file": "CMS_Negotiation_Program_Selected_Drug_List_and_Maximum_Fair_Price_Data_File_20260921.csv",
-  "url": "https://www.cms.gov/files/zip/selected-drug-list-negotiated-prices-also-known-maximum-fair-prices-statutezip.zip",
-  "fileDate": "2026-09-21",
-  "retrieved_at": "2026-10-29",
+  "file": "CMS_Negotiation_Program_Selected_Drug_List_and_Maximum_Fair_Price_Data_File_20261123.csv",
+  "url": "https://www.cms.gov/files/zip/selected-drug-list-mfp-data-file.zip",
+  "fileDate": "2026-11-23",
+  "retrieved_at": "2026-11-24",
   "drugs": {
    "ELIQUIS; ELIQUIS SPRINKLE": {
     "ingredient": "APIXABAN",
     "ipay": "2026",
     "prices": {
      "2026": 231.0,
-     "2027": 237.25
+     "2027": 237.25,
+     "2028": 245.23
     }
    },
    "ENBREL": {
@@ -1249,7 +1250,8 @@
     "ipay": "2026",
     "prices": {
      "2026": 2355.0,
-     "2027": 2418.7
+     "2027": 2418.7,
+     "2028": 2500.09
     }
    },
    "ENTRESTO; ENTRESTO SPRINKLE": {
@@ -1272,7 +1274,8 @@
     "ipay": "2026",
     "prices": {
      "2026": 9319.0,
-     "2027": 9571.07
+     "2027": 9571.07,
+     "2028": 9893.12
     }
    },
    "JANUVIA": {
@@ -1288,7 +1291,8 @@
     "ipay": "2026",
     "prices": {
      "2026": 197.0,
-     "2027": 202.33
+     "2027": 202.33,
+     "2028": 209.14
     }
    },
    "NOVOLOG; NOVOLOG FLEXPEN; NOVOLOG PENFILL; FIASP; FIASP FLEXTOUCH; FIASP PENFILL": {
@@ -1316,28 +1320,32 @@
     "ingredient": "DEUTETRABENAZINE",
     "ipay": "2027",
     "prices": {
-     "2027": 4093.0
+     "2027": 4093.0,
+     "2028": 4230.72
     }
    },
    "BREO ELLIPTA": {
     "ingredient": "FLUTICASONE; VILANTEROL",
     "ipay": "2027",
     "prices": {
-     "2027": 67.0
+     "2027": 67.0,
+     "2028": 69.25
     }
    },
    "CALQUENCE": {
     "ingredient": "ACALABRUTINIB",
     "ipay": "2027",
     "prices": {
-     "2027": 8600.0
+     "2027": 8600.0,
+     "2028": 8889.37
     }
    },
    "IBRANCE": {
     "ingredient": "PALBOCICLIB",
     "ipay": "2027",
     "prices": {
-     "2027": 7871.0
+     "2027": 7871.0,
+     "2028": 8135.85
     }
    },
    "JANUMET; JANUMET XR": {
@@ -1351,7 +1359,8 @@
     "ingredient": "LINACLOTIDE",
     "ipay": "2027",
     "prices": {
-     "2027": 136.0
+     "2027": 136.0,
+     "2028": 140.58
     }
    },
    "OFEV": {
@@ -1365,14 +1374,16 @@
     "ingredient": "APREMILAST",
     "ipay": "2027",
     "prices": {
-     "2027": 1650.0
+     "2027": 1650.0,
+     "2028": 1705.52
     }
    },
    "OZEMPIC; RYBELSUS; WEGOVY": {
     "ingredient": "SEMAGLUTIDE",
     "ipay": "2027",
     "prices": {
-     "2027": 274.0
+     "2027": 274.0,
+     "2028": 283.22
     }
    },
    "POMALYST": {
@@ -1386,35 +1397,124 @@
     "ingredient": "LINAGLIPTIN",
     "ipay": "2027",
     "prices": {
-     "2027": 78.0
+     "2027": 78.0,
+     "2028": 81.0
     }
    },
    "TRELEGY ELLIPTA": {
     "ingredient": "FLUTICASONE; UMECLIDINIUM; VILANTEROL",
     "ipay": "2027",
     "prices": {
-     "2027": 175.0
+     "2027": 175.0,
+     "2028": 180.89
     }
    },
    "VRAYLAR": {
     "ingredient": "CARIPRAZINE",
     "ipay": "2027",
     "prices": {
-     "2027": 770.0
+     "2027": 770.0,
+     "2028": 795.91
     }
    },
    "XIFAXAN": {
     "ingredient": "RIFAXIMIN",
     "ipay": "2027",
     "prices": {
-     "2027": 1000.0
+     "2027": 1000.0,
+     "2028": 1033.65
     }
    },
    "XTANDI": {
     "ingredient": "ENZALUTAMIDE",
     "ipay": "2027",
     "prices": {
-     "2027": 7004.0
+     "2027": 7004.0,
+     "2028": 7239.67
+    }
+   },
+   "ANORO ELLIPTA": {
+    "ingredient": "UMECLIDINIUM; VILANTEROL",
+    "ipay": "2028",
+    "prices": {
+     "2028": 130.0
+    }
+   },
+   "BIKTARVY": {
+    "ingredient": "BICTEGRAVIR; EMTRICITABINE; TENOFOVIR ANHYDROUS",
+    "ipay": "2028",
+    "prices": {
+     "2028": 2600.0
+    }
+   },
+   "CIMZIA": {
+    "ingredient": "CERTOLIZUMAB PEGOL",
+    "ipay": "2028",
+    "prices": {
+     "2028": 1375.0
+    }
+   },
+   "COSENTYX": {
+    "ingredient": "SECUKINUMAB",
+    "ipay": "2028",
+    "prices": {
+     "2028": 2600.0
+    }
+   },
+   "ENTYVIO": {
+    "ingredient": "VEDOLIZUMAB",
+    "ipay": "2028",
+    "prices": {
+     "2028": 2645.0
+    }
+   },
+   "ERLEADA": {
+    "ingredient": "APALUTAMIDE",
+    "ipay": "2028",
+    "prices": {
+     "2028": 7004.0
+    }
+   },
+   "KISQALI": {
+    "ingredient": "RIBOCICLIB",
+    "ipay": "2028",
+    "prices": {
+     "2028": 8650.0
+    }
+   },
+   "LENVIMA": {
+    "ingredient": "LENVATINIB",
+    "ipay": "2028",
+    "prices": {
+     "2028": 12985.0
+    }
+   },
+   "ORENCIA": {
+    "ingredient": "ABATACEPT",
+    "ipay": "2028",
+    "prices": {
+     "2028": 1750.0
+    }
+   },
+   "REXULTI": {
+    "ingredient": "BREXPIPRAZOLE",
+    "ipay": "2028",
+    "prices": {
+     "2028": 780.0
+    }
+   },
+   "TRULICITY": {
+    "ingredient": "DULAGLUTIDE",
+    "ipay": "2028",
+    "prices": {
+     "2028": 150.0
+    }
+   },
+   "VERZENIO": {
+    "ingredient": "ABEMACICLIB",
+    "ipay": "2028",
+    "prices": {
+     "2028": 8650.0
     }
    }
   }

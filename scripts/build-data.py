@@ -175,7 +175,8 @@ def nadac(like):
 # --------------------------------------------------------------------- MFP ----
 def mfp():
     page = get('https://www.cms.gov/priorities/medicare-prescription-drug-affordability/overview/medicare-drug-price-negotiation-program/selected-drugs-and-negotiated-prices')
-    m = re.search(r'href="(/files/zip/selected-drug-list-negotiated-prices[^"]+\.zip)"', page)
+    # Nom du fichier changé par CMS le 23/11/2026 (selected-drug-list-mfp-data-file.zip) : on accepte les deux.
+    m = re.search(r'href="(/files/zip/selected-drug-list-[^"]+\.zip)"', page)
     if not m:
         raise RuntimeError('lien du fichier des prix négociés introuvable sur cms.gov')
     z = zipfile.ZipFile(io.BytesIO(get('https://www.cms.gov' + m.group(1), binary=True)))
@@ -184,7 +185,7 @@ def mfp():
     out = {}
     for r in rows:
         drug = r['Selected Drug Name'].strip()
-        price = r['Single MFP per 30 DES'].strip()
+        price = r['Single MFP per 30 DES'].strip().replace('$', '').replace(',', '')  # « $231.00 » depuis le fichier du 23/11/2026
         if not price:
             continue
         start = r['MFP Effective Date'][-4:]
