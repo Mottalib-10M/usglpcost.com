@@ -21,7 +21,7 @@ export const AUTHOR_DESC: Record<string, string> = {"en": "Radif Partners reads 
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"en": ["GLP-1 drug prices", "Manufacturer self-pay programs", "TrumpRx", "Medicare Part D out-of-pocket cap", "Medicare drug price negotiation", "Medicare GLP-1 Bridge", "Medicaid prescription drug coverage", "NADAC pharmacy acquisition cost"], "es": ["Precios de los GLP-1", "Programas de autopago de los fabricantes", "TrumpRx", "Tope de gastos de la Parte D de Medicare", "Negociación de precios de Medicare", "Medicare GLP-1 Bridge", "Cobertura de medicamentos de Medicaid", "Costo de adquisición NADAC"]};
 export const CONTACT_EMAIL = "contact@usglpcost.com";
-export const THEME_COLOR = '#3C3B6E';
+export const THEME_COLOR = '#B31942';
 export const LOGO_SYMBOL = 'Rx';
 export const BING_VERIFY_CODE = '';
 export const GOOGLE_VERIFY_CODE = '';
