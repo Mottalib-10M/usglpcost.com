@@ -129,3 +129,7 @@ main :is(.text-navy-500, .text-navy-400, caption) { color: #475569 !important; }
 main header[class^="mb-"] :is(div, p, span, label, small, time) { color: #fff !important; }
 footer [class~="bg-green-50"] { background: transparent !important; border-color: rgba(255,255,255,.4) !important; }
 main :is(p, li, td, .prose) a { text-underline-offset: 5px !important; }
+/* Fil d'Ariane posé sur le bandeau (pages à propos et légales) : en blanc, sans bande blanche entre les deux */
+main > div:has(> nav[aria-label]):has(+ div > header > h1) { background:#B31942; box-shadow:0 0 0 100vmax #B31942; clip-path:inset(0 -100vmax -1px); padding-top:.75rem !important; padding-bottom:.25rem; }
+main > div:has(> nav[aria-label]):has(+ div > header > h1) :is(a,span,li) { color:#fff !important; }
+main > div:has(> nav[aria-label]) + div:has(> header > h1) { padding-top:0 !important; }
